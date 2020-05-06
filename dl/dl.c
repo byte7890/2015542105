@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 			exit(1);
 		}
 		while ((d = readdir(dp)) != NULL)	// 디렉터리 내의 각 엔트리에 대해
-			if(strcmp(d->d_name,".") == 0 || strcmp(d->d_name,"..") == 0)
+			if(strcmp(d->d_name,".") == 0 || strcmp(d->d_name,"..") == 0) //.과 ..의 이름이 일치하는 디렉토리 예외
 				continue;
 			else
 				printf("%s \n", d->d_name);    // 파일 이름 프린트
