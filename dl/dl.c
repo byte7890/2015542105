@@ -117,3 +117,4 @@ char* perm(mode_t mode) {
 	}
 	return(perms);
 }
+//수업자료와 옵션 입력 문자열 비교하기위해 https://stackoverflow.com/questions/5183203/checking-argv-against-a-string-c 를 참고하였습니다.
